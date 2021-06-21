@@ -20,17 +20,19 @@ public class SpringIntegrationApplication {
     public static void main(String[] args) throws InterruptedException {
         ConfigurableApplicationContext context = SpringApplication.run(SpringIntegrationApplication.class, args);
 
-        ChannelGateway channelGateway = context.getBean(ChannelGateway.class);
-        channelGateway.process(new Product("Milk", 34.34));
-        channelGateway.process(new Product("Chocolate", 114.34));
-
-        DirectChannel invokeCallGetProducts = context.getBean("invokeCallGetProducts", DirectChannel.class);
-        invokeCallGetProducts.send(MessageBuilder.withPayload("").build());
-
-        PollableChannel productsChannel = context.getBean("get_products_channel", PollableChannel.class);
-        Message<?> receive = productsChannel.receive();
-        System.out.println(receive);
-        System.out.println(receive.getPayload());
+//        ChannelGateway channelGateway = context.getBean(ChannelGateway.class);
+//        channelGateway.process(new Product("Milk", 34.34));
+//        channelGateway.process(new Product("Chocolate", 114.34));
+//
+//        DirectChannel invokeCallGetProducts = context.getBean("invokeCallGetProducts", DirectChannel.class);
+//        invokeCallGetProducts.send(MessageBuilder.withPayload("").build());
+//
+//        PollableChannel productsChannel = context.getBean("get_products_channel", PollableChannel.class);
+//        Message<?> receive = productsChannel.receive();
+//        if (receive != null) {
+//            System.out.println(receive);
+//            System.out.println(receive.getPayload());
+//        }
     }
 
 }
