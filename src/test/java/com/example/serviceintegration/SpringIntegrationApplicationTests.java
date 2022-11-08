@@ -1,4 +1,4 @@
-package com.polozov.spring2.lesson06;
+package com.example.serviceintegration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

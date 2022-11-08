@@ -1,7 +1,7 @@
-package com.polozov.spring2.lesson06.integration;
+package com.example.serviceintegration.integration;
 
-import com.polozov.spring2.lesson06.domain.Order;
-import com.polozov.spring2.lesson06.service.OrderService;
+import com.example.serviceintegration.domain.Order;
+import com.example.serviceintegration.service.OrderService;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.handler.annotation.Headers;
 import org.springframework.messaging.handler.annotation.Payload;

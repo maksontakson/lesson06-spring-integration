@@ -1,4 +1,4 @@
-package com.polozov.spring2.lesson06.domain;
+package com.example.serviceintegration.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
